@@ -1,0 +1,47 @@
+:root {
+  color-scheme: dark;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #edf1fb;
+  background: #101521;
+  line-height: 1.6;
+}
+
+body {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 5vw, 4rem);
+}
+
+.site-header, footer, nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.5rem;
+  align-items: center;
+}
+
+.site-header {
+  justify-content: space-between;
+  padding: 1.35rem 0;
+  border-bottom: 1px solid #333c50;
+}
+
+.wordmark {
+  color: #edf1fb;
+  text-decoration: none;
+  font-weight: 680;
+}
+
+main {
+  max-width: 44rem;
+  margin: clamp(2.5rem, 8vw, 6rem) 0 3rem;
+}
+
+h1, h2 { line-height: 1.13; }
+h1 { max-width: 16ch; font-size: clamp(2rem, 6.5vw, 4.5rem); margin: 0 0 1.3rem; }
+h2 { font-size: 1.22rem; margin: 0 0 0.55rem; }
+p { color: #c3cbdb; margin: 0 0 1rem; }
+.intro { font-size: clamp(1.05rem, 2.5vw, 1.28rem); }
+section { padding-top: 1.6rem; margin-top: 1.6rem; border-top: 1px solid #333c50; }
+footer { border-top: 1px solid #333c50; padding: 1.35rem 0 2.75rem; font-size: 0.9rem; }
+a { color: #a8c9ff; text-underline-offset: 0.2em; }
+a:focus-visible { outline: 2px solid #d1e3ff; outline-offset: 4px; }
